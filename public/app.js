@@ -44,34 +44,46 @@ var addCat = function(name, favouriteFood, imageURL){
   appendElements(cat, catName, catFavouriteFood, catImageLi);
 }
 
+var cats = [
+  {name: "Amber", faveFood: "Chicken", img: "http://i.imgur.com/mtj8mFV.jpg"},
+  {name: "Maru", faveFood: "Sushi", img: "https://s-media-cache-ak0.pinimg.com/originals/f5/44/db/f544db41696216763a0df47af581e5cb.jpg"},
+  {name: "Boba", faveFood: "Sock Fluff", img: "http://66.media.tumblr.com/d1f01bbe0150fda0c40d2151c5eaeac8/tumblr_odlqqskjj61v9cejwo1_400.jpg"},
+  {name: "Barnaby", faveFood: "Tuna", img: "http://www.factzoo.com/sites/all/img/mammals/felidae/rotund-pallas-cat-not-pleased.jpg"},
+  {name: "Max", faveFood: "Whiskas Temptations", img: "http://66.media.tumblr.com/7c5784ea89369c780e782bf10c60315a/tumblr_npb0hlYwhV1u63jaco1_1280.jpg"}
+];
+
 
 
 var app = function(){
 
-// var cat = document.createElement("ul");
-// cat.classList.add("cat");
+  // var cat = document.createElement("ul");
+  // cat.classList.add("cat");
 
-// var name = document.createElement("li");
-// name.innerText = "Name: Amber";
+  // var name = document.createElement("li");
+  // name.innerText = "Name: Amber";
 
-// var favouriteFood = document.createElement("li");
-// favouriteFood.innerText = "Favourite Food: Chicken";
+  // var favouriteFood = document.createElement("li");
+  // favouriteFood.innerText = "Favourite Food: Chicken";
 
-// var imageLi = document.createElement("li");
-// imageLi.classList.add("image");
-// var image = document.createElement("img");
-// image.src = "http://i.imgur.com/mtj8mFV.jpg"
-// image.style.width = "500px";
-// imageLi.appendChild(image);
+  // var imageLi = document.createElement("li");
+  // imageLi.classList.add("image");
+  // var image = document.createElement("img");
+  // image.src = "http://i.imgur.com/mtj8mFV.jpg"
+  // image.style.width = "500px";
+  // imageLi.appendChild(image);
 
-// cat.appendChild(name);
-// cat.appendChild(favouriteFood);
-// cat.appendChild(imageLi);
+  // cat.appendChild(name);
+  // cat.appendChild(favouriteFood);
+  // cat.appendChild(imageLi);
 
-// var cats = document.querySelector("#cats");
-// cats.appendChild(cat);
+  // var cats = document.querySelector("#cats");
+  // cats.appendChild(cat);
 
-addCat("Amber", "Chicken", "http://i.imgur.com/mtj8mFV.jpg");
+  //addCat("Amber", "Chicken", "http://i.imgur.com/mtj8mFV.jpg");
+
+  cats.forEach(function(cat){
+    addCat(cat.name, cat.faveFood, cat.img);
+  })
 
 
 }

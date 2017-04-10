@@ -3,10 +3,9 @@ var app = function(){
 var cat = document.createElement("ul");
 cat.classList.add("cat");
 
+var name = document.createElement("li");
+name.innerText = "Name: Amber";
 
-
-
-var name;
 var favouriteFood;
 var image;
 
